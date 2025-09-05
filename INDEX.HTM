@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<script src="script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Health Analyze</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient {
+            background: linear-gradient(90deg, #e3f2fd 0%, #bbdefb 100%);
+        }
+        .icon-circle {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon-circle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .service-card {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen gradient">
+        <!-- หัวเว็บ -->
+        <header class="container mx-auto px-4 py-16 text-center">
+            <h1 class="text-5xl font-bold text-gray-900 mb-6">
+                AI เพื่อการแพทย์แห่งอนาคต
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+                ยกระดับการดูแลสุขภาพด้วยเทคโนโลยี AI ที่ทันสมัย
+            </p>
+            <button 
+    id="startButton" 
+    class="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700"
+    onclick="window.location.href='E.html'">
+    เริ่มต้นใช้งาน
+    </button>
+
+        </header>
+
+        <!-- ส่วนบริการ -->
+        <section class="container mx-auto px-4 py-16">
+            <h2 class="text-3xl font-bold text-center mb-12">บริการของเรา</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- บริการที่ 1 -->
+                <a href="#" class="p-6 bg-white rounded-xl shadow-lg service-card">
+                    <div class="icon-circle bg-blue-500 mb-4 mx-auto">
+                        <img src="img/วินิจฉัย.png">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-center">การวินิจฉัยด้วย AI</h3>
+                    <p class="text-gray-600 text-center">ใช้ปัญญาประดิษฐ์ช่วยวินิจฉัยโรคเบื้องต้นได้อย่างแม่นยำ</p>
+                </a>
+                <!-- บริการที่ 2 -->
+                <a href="#" class="p-6 bg-white rounded-xl shadow-lg service-card">
+                    <div class="icon-circle bg-blue-500 mb-4 mx-auto">
+                        <img src="img/ติดตาม.webp" alt="Health Monitoring">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-center">ติดตามสุขภาพ</h3>
+                    <p class="text-gray-600 text-center">ระบบติดตามสุขภาพอัจฉริยะตลอด 24 ชั่วโมง</p>
+                </a>
+                <!-- บริการที่ 3 -->
+                <a href="#" class="p-6 bg-white rounded-xl shadow-lg service-card">
+                    <div class="icon-circle bg-blue-500 mb-4 mx-auto">
+                        <img src="img/วิเคา.png" alt="Analysis">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-center">วิเคราะห์ผลตรวจ</h3>
+                    <p class="text-gray-600 text-center">วิเคราะห์ผลตรวจสุขภาพด้วยระบบ AI ทันสมัย</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- ส่วนท้าย -->
+        <footer class="bg-gray-900 text-gray-400 py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-white text-lg font-semibold mb-4">เกี่ยวกับเรา</h3>
+                        <p class="text-sm">
+                            เราคือผู้นำด้านเทคโนโลยี AI ทางการแพทย์ที่มุ่งมั่นพัฒนาระบบการดูแลสุขภาพ
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-white text-lg font-semibold mb-4">ติดต่อ</h3>
+                        <ul class="space-y-2">
+                            <li>โทร: 02-xxx-xxxx</li>
+                            <li>อีเมล: contact@medicalai.com</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-white text-lg font-semibold mb-4">ติดตามเรา</h3>
+                        <div class="space-x-4">
+                            <a href="#" class="text-white hover:text-blue-400">Facebook</a>
+                            <a href="#" class="text-white hover:text-blue-400">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
